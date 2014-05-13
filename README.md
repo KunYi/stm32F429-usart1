@@ -9,7 +9,7 @@ prepare, you need download and build somthing tools
 
 1. <span>[STM32F429I-Discovery Firmware - STM32F429 Library](http://www.st.com/st-web-ui/static/active/en/st_prod_software_internet/resource/technical/software/firmware/stsw-stm32138.zip)</span>
 2. <span>[Stlink - Flash tools](https://github.com/texane/stlink)</span>
-3. <span><div>[GCC for ARM Embedded - Toolchain](https://launchpad.net/gcc-arm-embedded)</div><div>currently on Linux(Ubuntu) use [gcc 4.8.2](https://launchpad.net/gcc-arm-embedded/4.8/4.8-2013-q4-major/+download/gcc-arm-none-eabi-4_8-2013q4-20131204-linux.tar.bz2),</div></span>
+3. <span><div>[GCC for ARM Embedded - Toolchain](https://launchpad.net/gcc-arm-embedded)</div><div>currently on Linux(Ubuntu) use [gcc 4.8.2](https://launchpad.net/gcc-arm-embedded/4.8/4.8-2014-q1-update/+download/gcc-arm-none-eabi-4_8-2014q1-20140314-linux.tar.bz2) 2014q1</div></span>
 
 a demo step like the following
 
@@ -51,13 +51,13 @@ cd ..
 #
 mkdir -p toolchain
 cd toolchain
-wget https://launchpad.net/gcc-arm-embedded/4.8/4.8-2013-q4-major/+download/gcc-arm-none-eabi-4_8-2013q4-20131204-linux.tar.bz2 
-tar xjvf gcc-arm-none-eabi-4_8-2013q4-20131204-linux.tar.bz2
+wget https://launchpad.net/gcc-arm-embedded/4.8/4.8-2014-q1-update/+download/gcc-arm-none-eabi-4_8-2014q1-20140314-linux.tar.bz2 
+tar xjvf gcc-arm-none-eabi-4_8-2014q1-20140314-linux.tar.bz2
 cd ..
 #
 # add utils & toolchain into PATH
 #
-export PATH=`pwd`/toolchain/gcc-arm-none-eabi-4_8-2013q4/bin:`pwd`/utils/bin:$PATH
+export PATH=`pwd`/toolchain/gcc-arm-none-eabi-4_8-2014q1/bin:`pwd`/utils/bin:$PATH
 #
 # download the usart1 source code and build and flash for STM32F429I-Discovery
 # url:https://github.com/KunYi/stm32F429-usart1
